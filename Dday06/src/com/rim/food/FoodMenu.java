@@ -47,7 +47,7 @@ public class FoodMenu {
 
 			} else if (select == 2) {
 				FoodView fv = new FoodView();
-				fv.showResult(foods);
+				fv.showResult(foods); //결산출력
 
 				break;
 			}

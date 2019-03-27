@@ -20,7 +20,7 @@ public class FoodMenu {
 					int last = foods.length + 1;
 					System.out.println(last + ".주문완료");
 
-					int num = sc.nextInt();
+					int num = sc.nextInt();//메뉴번호 입력받기
 
 					if (num != last) { // 주문완료가 아닌경우 수량 입력받기
 						System.out.println("[" + foods[num - 1].name + "] 수량 : ");
@@ -35,7 +35,8 @@ public class FoodMenu {
 					} else {// 마지막 번호면
 							// 영수증 출력 후 빠져나오기
 						FoodView fv = new FoodView();
-						fv.viewReceipt(foods);
+						fv.viewReceipt(foods); //영수증 출력
+						
 						for (int i = 0; i < foods.length; i++) {
 							foods[i].amount = 0;
 						}
